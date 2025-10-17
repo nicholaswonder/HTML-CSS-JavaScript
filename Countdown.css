@@ -1,0 +1,47 @@
+.centerAlign
+{
+    margin:auto;
+    width:fit-content;
+}
+
+#countDownContainer
+{
+    width: 75%;
+    margin:auto;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color:black;
+    background-color: white;
+}
+
+body
+{
+    background-color: lightyellow;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#clockHeader, #currentDate
+{
+    padding-left:25px;
+}
+
+fieldset
+{
+    margin-bottom: 1px;
+    border-radius: 15px;
+}
+
+#timerContainer
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.numbers
+{
+    height:68px;
+    width:58px;
+    background-image: url(Numbers.jpg);
+    transition: background-position .1s;
+}
