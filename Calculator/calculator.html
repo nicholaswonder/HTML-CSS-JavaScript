@@ -1,0 +1,56 @@
+<head>
+    <title>Calculator</title>
+    <link href="calcCSS.css" rel="stylesheet">
+    <script src="calcJS.js"></script>
+</head>
+<body>
+    <!-- Heres the plan: Title at the top, calulator on the left side, and history on the right -->
+    <h1>Welcome to my calculator</h1>
+    <div class="mainDiv">
+        <div id="calcDiv">
+            <label id="currentEqu"></label>
+            <br/>
+            <!-- Calculator Div -->
+            <input readonly id="currentNum"/>
+            <div class="buttonRow">
+                <button type="button" class="clearFlex" onclick="backSpace();">Back</button>
+                <button type="button" class="clearFlex" onclick="clearTB();">Clear</button>
+                <button type="button" class="clearFlex" onclick="clearAll();">CE</button>
+            </div>
+            <div class="buttonRow">
+                <button type="button" class="buttonFlex" onclick="operatorClick('^');">^</button>
+                <button type="button" class="buttonFlex" onclick="factorialClick();">!</button>
+                <button type="button" class="buttonFlex" onclick="operatorClick('%');">%</button>
+                <button type="button" class="buttonFlex" onclick="operatorClick('/');">/</button>
+            </div>
+            <div class="buttonRow">
+                <button type="button" class="buttonFlex" onclick="numClick(7);">7</button>
+                <button type="button" class="buttonFlex" onclick="numClick(8);">8</button>
+                <button type="button" class="buttonFlex" onclick="numClick(9);">9</button>
+                <button type="button" class="buttonFlex" onclick="operatorClick('*');">*</button>
+            </div>
+            <div class="buttonRow">
+                <button type="button" class="buttonFlex" onclick="numClick(4);">4</button>
+                <button type="button" class="buttonFlex" onclick="numClick(5);">5</button>
+                <button type="button" class="buttonFlex" onclick="numClick(6);">6</button>
+                <button type="button" class="buttonFlex" onclick="operatorClick('+');">+</button>
+            </div>
+            <div class="buttonRow">
+                <button type="button" class="buttonFlex" onclick="numClick(1);">1</button>
+                <button type="button" class="buttonFlex" onclick="numClick(2);">2</button>
+                <button type="button" class="buttonFlex" onclick="numClick(3);">3</button>
+                <button type="button" class="buttonFlex" onclick="operatorClick('-');">-</button>
+            </div>
+            <div class="buttonRow">
+                <button type="button" class="buttonFlex" onclick="negative();">+/-</button>
+                <button type="button" class="buttonFlex" onclick="numClick(0);">0</button>
+                <button type="button" id="equalsButton" onclick="equalsClick();">=</button>
+            </div>
+        </div>
+    </div>
+    <div id="recordDiv" class="mainDiv">
+        <!-- Recording Div -->
+        <h2>History</h2>
+        <button type="button" onclick="clearHistory();">Clear History</button>
+    </div>
+</body>

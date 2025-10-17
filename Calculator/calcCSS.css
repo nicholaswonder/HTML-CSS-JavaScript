@@ -1,0 +1,78 @@
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #454545;
+}
+
+h1
+{
+    color:white;
+}
+
+.mainDiv
+{
+    background-color: white;
+    width: 75%;
+    margin: auto;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+#calcDiv
+{
+    width:500px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.buttonRow
+{
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.buttonFlex
+{
+    flex: 25%;
+    font-size: x-large;
+}
+
+.clearFlex
+{
+    flex: 33%;
+    font-size: x-large;
+}
+
+#equalsButton
+{
+    flex: 50%;
+    font-size: x-large;
+    background-color: rgb(255, 79, 79);
+}
+
+#currentNum
+{
+    width: 500px;
+    font-size: x-large;
+    text-align: end;
+}
+
+#currentEqu
+{
+    font-size: x-large;
+}
+
+p
+{
+    font-size: x-large;
+}
+
+#recordDiv
+{
+    padding-bottom: 25px;
+}
