@@ -1,0 +1,34 @@
+<head>
+    <title>Calendar</title>
+    <link href="Calander.css" rel="stylesheet">
+    <script src="Calander.js"></script>
+</head>
+<body onload="pageLoad();">
+
+    <div id="calendarContainer">
+        <div id="calendarHeader">
+            <div id="currentMonth"></div>
+            <button type="button" id="rightButton" onclick="rightButtonClick();">→</button>
+            <button type="button" id="leftButton" onclick="leftButtonClick();">←</button>
+        </div>
+        <div id="dayLabels">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>
+        <div id="datesContainer">
+            <!-- Create 5 divs to contain dynamically created divs -->
+             <div id="week1" class="weeks"></div>
+             <div id="week2" class="weeks"></div>
+             <div id="week3" class="weeks"></div>
+             <div id="week4" class="weeks"></div>
+             <div id="week5" class="weeks"></div>
+             <div id="week6" class="weeks"></div>
+        </div>           
+    </div>
+
+</body>
