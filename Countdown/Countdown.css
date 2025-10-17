@@ -1,0 +1,42 @@
+label
+{
+    font-size:xx-large;
+}
+
+.centerAlign
+{
+    margin:auto;
+    width:fit-content;
+}
+
+#countDownContainer
+{
+    width: 75%;
+    margin:auto;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color:black;
+    background-color: white;
+}
+
+body
+{
+    background-color: lightyellow;
+}
+
+h1, h2, label
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#clockHeader, #currentDate
+{
+    padding-left:25px;
+}
+
+fieldset
+{
+    margin-bottom: 1px;
+    border-radius: 15px;
+}

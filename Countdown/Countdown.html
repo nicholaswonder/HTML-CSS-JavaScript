@@ -1,0 +1,27 @@
+<head>
+    <title>Countdown Clock</title>
+    <link href="Countdown.css" rel="stylesheet">
+    <script src="Countdown.js"></script>
+</head>
+<body onload="pageLoad();">
+    <div id="countDownContainer">
+        <h1 id="clockHeader"></h1>
+        <h2 id="currentDate"></h2>
+        <fieldset id="clockContainer">
+            <div id="labelContainer" class="centerAlign">
+                <label id="daysLabel"></label>
+                <label id="hoursLabel"></label>
+                <label id="minLabel"></label>
+                <label id="secLabel"></label>
+            </div>
+            <h2 class="centerAlign">Days : Hours : Minutes : Seconds</h2>
+        </fieldset>
+    </div>
+</body>
+
+<!--
+ Originally, I had a meta tag in the html which reloaded the page every second to update
+ However, I felt that this was a bad design because reloading the page every second
+ can be resource intensive, so I figured out how to make the javascript
+ sleep asyncronously, so the page updates without the pain of reloading
+-->
